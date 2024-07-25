@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>CSS</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="topicos">
+                <a href="index.html">INÍCIO</a>
+                <a href="html.html">HTML</a>
+                <a href="css.html">CSS</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="html_content">
+            <h1>O que é CSS?</h1>
+            <h2 id="html_oqe">Definição básica</h2>
+            <p>CSS é uma linguagem de estilo utilizada para controlar a apresentação visual de páginas web escritas em HTML e XHTML.</p>
+            <h2>Separação de conteúdo e estilo</h2>
+            <p>CSS separa o conteúdo estrutural (definido em HTML) da apresentação visual (definida em CSS), permitindo maior flexibilidade e controle sobre o design das páginas.</p>
+            <h3>Seletores e propriedades</h3>
+            <p>CSS utiliza seletores para identificar quais elementos HTML serão estilizados, e propriedades para definir como esses elementos devem ser apresentados visualmente.</p>
+            <h4>Cascata e herança</h4>
+            <p>O termo "cascading" em CSS refere-se à hierarquia de regras de estilo, onde regras mais específicas têm precedência sobre regras mais gerais. Além disso, o princípio de herança permite que certas propriedades sejam aplicadas aos elementos filhos dos elementos estilizados.</p>
+            <h5>Flexibilidade e responsividade</h5>
+            <p>CSS oferece recursos poderosos para criar layouts flexíveis e responsivos, adaptáveis a diferentes dispositivos e tamanhos de tela, através de técnicas como media queries e unidades relativas.</p>
+            <h6>Evolução e padrões</h6>
+            <p>CSS é continuamente desenvolvido pelo W3C e pela comunidade web para incluir novos recursos e melhorar a compatibilidade entre navegadores. Versões mais recentes, como CSS3, introduziram novas funcionalidades como gradientes, animações e transformações.</p>
+
+            <p id="list_exp">Seletores de tag: são os seletores mais simples e básicos, permitem estilizar todos os elementos de uma determinada tag HTML.<br>
+                <br>p { <br>
+                    color: blue; <br>
+                    font-size: 16px; <br>
+                } 
+                <br><br>  
+                Seletores de classe: permitem estilizar elementos que possuem um atributo class específico, são indicados com um ponto (.) seguido do nome da classe. <br>
+                <br>< p class="destaque" >Este é um parágrafo de destaque.< /p >   <br><br>
+                .destaque {<br>
+                    background-color: yellow;<br>
+                    padding: 10px;<br>
+                } <br><br>
+
+                Seletores de ID: são usados para estilizar um elemento específico que possui um atributo id único, são indicados com um hash (#) seguido do nome do ID.
+                <br><br>< div id="cabecalho" >
+                    < h1 >Título do site< /h1 >
+                < /div ><br><br>
+
+                #cabecalho { <br>
+                    background-color: #333;<br>
+                    color: white;<br>
+                    padding: 20px;<br>
+                } <br><br>
+                 </p>
+            <div id="prop_val">
+            <h3>Propiedades e valores</h3>
+            <ul>
+                <li>As propriedades são nomes que especificam quais aspectos dos elementos HTML serão estilizados.</li>
+                <li>Cada propriedade CSS define uma característica específica que pode ser ajustada, como cor, tamanho, margem, alinhamento, entre outros.</li>
+                <li>Exemplos de propriedades incluem color, font-size, margin, padding, background-color, border, text-align, entre muitas outras.</li>
+                <li>Os valores são atribuídos às propriedades para definir como essas características devem ser exibidas.</li>
+                <li>Cada propriedade tem um conjunto específico de valores que pode aceitar, como cores, tamanhos, unidades de medida, etc.</li>
+                <li>Exemplos de valores incluem blue (para cor), 16px (para tamanho de fonte em pixels), center (para alinhamento), #f0f0f0 (para código de cor hexadecimal),<br> 1em (para unidades de medida relativa ao tamanho da fonte), entre outros.</li>
+                <li>A sintaxe no CSS para aplicar propriedades e valores segue um padrão comum: <br><br>
+                    selector { <br>
+                        property: value; <br>
+                    } <br>
+                    </li>
+                <li>O selector especifica a qual elemento (ou elementos) HTML as regras de estilo devem ser aplicadas.</li>
+                <li>Dentro das chaves {}, são listadas uma ou mais declarações de estilo, onde cada declaração consiste em uma property seguida por : e seu value.</li>
+            </ul>
+            </div>
+
+            <div id="id_class">
+                <h3>Classes e IDs</h3>
+                <ul>
+                    <li>Classes são atributos HTML que podem ser aplicados a um ou mais elementos para identificá-los de forma específica.</li>
+                    <li>Permitem reutilizar estilos em diferentes partes do documento HTML.</li>
+                    <li>Em HTML, uma classe é especificada usando o atributo class dentro de uma tag. <br><br>
+                        < p class="destaque" >Este é um parágrafo de destaque.< /p > <br><br>
+                        Aqui, destaque é o nome da classe que será usada para estilizar o parágrafo. <br><br>
+                    </li>
+                    <li>Para estilizar elementos com uma classe específica, utiliza-se o seletor de classe (. seguido do nome da classe). <br><br>
+                        .destaque {<br>
+                            background-color: yellow;<br>
+                            font-weight: bold;<br>
+                            padding: 10px;<br>
+                        } <br><br>
+                        
+                    </li>
+                    <li>IDs são atributos HTML usados para identificar de forma única um único elemento na página.</li>
+                    <li>Cada ID deve ser único no documento HTML.</li>
+                    <li>Em HTML, um ID é especificado usando o atributo id dentro de uma tag. <br><br>
+                        < div id="cabecalho" ><br>
+                            < h1>Título do site< /h1 ><br>
+                        < /div ><br><br>
+                        Aqui, cabecalho é o ID atribuído ao elemento < div > <br><br>.
+                        </li>
+                    <li>Para estilizar um elemento com um ID específico, utiliza-se o seletor de ID (# seguido do nome do ID). <br><br>
+                        #cabecalho { <br>
+                            background-color: #333; <br>
+                            color: white; <br>
+                            padding: 20px; <br>
+                        } <br><br>                
+                </ul>
+                </div>
+                <div id="casct_espec">
+                <h3>Cascata e especificidade</h3>
+                <ul>
+                    <li>A cascata refere-se ao processo pelo qual o navegador determina quais estilos devem ser aplicados a um elemento específico, levando em consideração várias fontes de estilos.
+                    </li>
+                    <li>A especificidade refere-se à forma como o navegador determina qual regra CSS deve ser aplicada quando várias regras se aplicam ao mesmo elemento.</li>
+                </ul>
+                </div>
+
+                <h2>Exemplo:</h2>
+                <img id="img" src="img/codigo.png" alt="">
+    </main>
+    <footer></footer>
+</body>
+</html>
